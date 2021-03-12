@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void) {
+  int not;
+  printf("Enter student's grade\n");
+  while(0<=not && not<=100){
+    scanf("%d",&not);
+    printf("grade: %d\n", not);
+    if(0<=not && not<50){
+      printf("F\n");
+      printf("sorry, you have failed...please try harder next time");
+    }
+    else if(50<=not && not<70){
+      printf("D\n");
+      printf("need more studying");
+    }
+    else if(70<=not && not<85){
+      printf("C\n");
+      printf("not bad");
+    }
+    else if(85<=not && not<90){
+      printf("B\n");
+      printf("very good");
+    }
+    else if(90<=not && not<100){
+      printf("A\n");
+      printf("excellent job");
+    }
+    else{
+      printf("the number you have entered is not valid..");
+    }
+
+  }
+
+  return 0;
+} 
