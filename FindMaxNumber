@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main(void) {
+  int dizi[5];
+  int i;
+  printf("Lütfen dizideki elemanları girin: \n");
+  for(i=0; i<5; i++){
+    scanf("%d",&dizi[i]);
+  }
+
+ // printf("%d %d %d %d %d\n",dizi[0],dizi[1],dizi[2],dizi[3],dizi[4]);
+
+  int max=dizi[0];
+
+  for(i=0; i<5; i++){
+      if(dizi[i]>max){
+        max=dizi[i];
+      }
+
+    //printf("%d ",dizi[i]);
+  }
+
+  printf("En büyük sayı: %d\n", max);
+
+
+  return 0;
+}
+
+/*
+Tek yapmam gereken dizinin başlangıç değerini başka bir degere atamak ve dizinin diğer elemanları ile onu karşılaştırmak. 
+Ama bu basit kodu yazana kadar o kadar şeyler denedim ki...
+Evet, kırk fırın ekmek yapmam lazım.! Hayatı kod olan bir insan bu basit kodu birkaç dakika içinde yazar
+Bu yüzden çok çalışmalısın dostum!(kendime söylüyorum)
+*/
