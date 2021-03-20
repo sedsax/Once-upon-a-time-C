@@ -49,7 +49,7 @@ void karekokal(double x) {
 	for (a=1; a<=10000; a++){
 		n=((x/n)+n)/2; 
 	}	
-	printf("sonuc : %lf", x);
+	printf("sonuc : %lf", n);
 }
 		
 int	main(){
