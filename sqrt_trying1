@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h> 
+ 
+int main() {
+
+	double sayi,sonuc;  
+	printf("İşlemden çıkmak için 0 'a basınız.");
+	while(1) {
+	
+    printf("\nSayı: "); 
+    scanf("%lf",&sayi);
+    if(sayi<0){
+      printf("negatif sayı kabul edilmiyor lütfen başka bir değer giriniz!\n");
+      scanf("%lf",&sayi);
+    }     
+      
+    sonuc = sqrt(sayi); 
+      printf("%.1lf\n",sonuc); 
+
+  
+    if (sayi == 0)
+      break;
+}
+    return 0;
+} 
