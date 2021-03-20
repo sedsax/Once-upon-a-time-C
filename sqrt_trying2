@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h> 
+ 
+int main() {
+
+	double sayi,sonuc;  
+	printf("İşlemden çıkmak için -1 'e basınız.");
+	while(1) {
+	
+    printf("\nSayı: "); 
+    scanf("%lf",&sayi);
+    if (sayi == -1)
+      break;
+         
+    sonuc = sqrt(sayi); 
+      printf("%.1lf\n",sonuc); 
+  }
+  
+    return 0;
+} 
